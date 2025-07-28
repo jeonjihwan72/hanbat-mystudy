@@ -3,8 +3,14 @@
 
 github commit with VS code test
 
-현재 cmd가 가리키고 있는 위치를 확인하는 명령어 
+- 현재 cmd가 가리키고 있는 위치를 확인하는 명령어 
 
 ```
 git remote -v
+```
+
+- ssh를 사용한 통신 방법
+
+```
+git remote set-url origin git@github.com:user.id/repo.name.git
 ```
