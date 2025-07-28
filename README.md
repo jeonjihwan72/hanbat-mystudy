@@ -3,6 +3,8 @@
 
 github commit with VS code test
 
+## Tips
+
 - 현재 cmd가 가리키고 있는 위치를 확인하는 명령어 
 
 ```
@@ -14,3 +16,7 @@ git remote -v
 ```
 git remote set-url origin git@github.com:user.id/repo.name.git
 ```
+
+
+## Study Contents
+
