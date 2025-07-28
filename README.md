@@ -16,3 +16,20 @@ git remote -v
 ```
 git remote set-url origin git@github.com:user.id/repo.name.git
 ```
+
+
+- java코드를 class파일(기계어에 가까운 형태)로 변환하는 코드
+
+```
+javac App.java
+```
+
+
+- 만들어진 클래스 파일을 실행하는 코드 (바이트 코드를 읽는 코드)
+    - 바이트 코드 인터프리터
+    - 자바 가상 머신 (JVM)
+
+```
+# 확장자명을 붙이면 에러발생
+java.exe App
+```
