@@ -33,3 +33,6 @@ javac App.java
 # 확장자명을 붙이면 에러발생
 java.exe App
 ```
+
+- .gitignore 파일 생성하는 사이트
+[gitignore.io](https://gitignore.io)
