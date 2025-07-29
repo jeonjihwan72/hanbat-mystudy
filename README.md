@@ -77,3 +77,13 @@ javac App.java Utils.java
 ```bash 
 javac -d bin -sourcepath src src/App.java
 ```
+
+---
+
+- 패키지화 할 때 (도메인 역순) - (제품 명) 순으로 구성하는 것이 관례
+    - ex. naver.com의 검색 기능
+        > com → naver → search → search.java
+    - ex. hanbat.ac.kr의 검색 기능
+        > kr → ac → hanbat → search → search.java
+
+- command line에서 패키지를 경로로 지정해서는 안되고 클래스를 선언할 때에는 반드시 최상위 패키지부터 경로대로 작성하며 호출해야 한다.
