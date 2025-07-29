@@ -71,3 +71,9 @@ java -jar app.jar
 ```
 javac App.java Utils.java
 ```
+
+- Java Compiler를 병렬적으로 할 때 파일이 많다면 아래의 코드로 경로를 지정하여 경로 단위로 컴파일한다. (단 파일들이 src 폴더 아래에 있어야 한다.)
+
+```bash 
+javac -d bin -sourcepath src src/App.java
+```
