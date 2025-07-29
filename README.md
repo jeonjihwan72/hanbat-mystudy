@@ -36,3 +36,5 @@ java.exe App
 
 - .gitignore 파일 생성하는 사이트
 > [gitignore.io](https://gitignore.io)
+
+- [java byte code 구성](https://medium.com/@davethomas_9528/writing-hello-world-in-java-byte-code-34f75428e0ad) 
