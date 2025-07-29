@@ -5,6 +5,13 @@ github commit with VS code test
 
 ## Tips
 
+- Git에서의 Commit의 기본 편집기를 Visual Studio Code로 변경하는 방법 
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+
 - 현재 cmd가 가리키고 있는 위치를 확인하는 명령어 
 
 ```
