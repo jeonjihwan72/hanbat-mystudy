@@ -39,6 +39,8 @@ java.exe App
 
 - [java byte code 구성](https://medium.com/@davethomas_9528/writing-hello-world-in-java-byte-code-34f75428e0ad)
 
+---
+
 아래의 두 코드는 결과적으로 동일한 결과를 출력하지만
 ```
 jar cfe app.jar App *.class
@@ -53,4 +55,12 @@ java -cp app.jar App
 2. jar 명령어 o
 ```
 java -jar app.jar
+```
+
+---
+
+- Java Compiler를 통해 여러 개의 .java 파일을 컴파일링 할 때 아래와 같이 병렬적으로 나열하여 명령어를 작성한다.
+
+```
+javac App.java Utils.java
 ```

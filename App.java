@@ -7,6 +7,6 @@ public class App {
    * @param args 명령행 인수 배열 (이 프로그램에서는 사용되지 않음)
    */
   public static void main(String[] args) {
-    System.out.println("hello, world");
+    Utils.printMessage("Hello!");
   }
 }
