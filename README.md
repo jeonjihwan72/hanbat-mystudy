@@ -96,3 +96,7 @@ java -cp bin:lib/guava-33.4.8-jre.jar org.example.myapp.App
 # Windows
 java -cp bin;lib/guava-33.4.8-jre.jar org.example.myapp.App
 ```
+
+- gradle에서의 소스폴더는 main - java, main - resources, test - java, test - resources 폴더이다.
+
+- 파일은 백업이 되지만 빈 폴더는 백업이 되지 않음
