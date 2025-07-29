@@ -1,5 +1,6 @@
 package org.example.myapp;
 
+import com.google.common.base.Joiner;
 import org.example.util.Utils;
 
 /** 이 클래스는 한밭대학교 특강 실습 예제를 위한 첫 번재 클래스입니다. <code>App</code> 클래스! */
@@ -12,5 +13,6 @@ public class App {
    */
   public static void main(String[] args) {
     Utils.printMessage("Hello!");
+    String message = Joiner.on(", ").join("hello", "world");
   }
 }

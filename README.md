@@ -87,3 +87,12 @@ javac -d bin -sourcepath src src/App.java
         > kr → ac → hanbat → search → search.java
 
 - command line에서 패키지를 경로로 지정해서는 안되고 클래스를 선언할 때에는 반드시 최상위 패키지부터 경로대로 작성하며 호출해야 한다.
+
+- os 환경에 따라 아래의 코드가 변경된다.
+```
+# Linux OS, Mac OS
+java -cp bin:lib/guava-33.4.8-jre.jar org.example.myapp.App
+
+# Windows
+java -cp bin;lib/guava-33.4.8-jre.jar org.example.myapp.App
+```
