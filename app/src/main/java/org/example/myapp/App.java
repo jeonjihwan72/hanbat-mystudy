@@ -14,5 +14,6 @@ public class App {
   public static void main(String[] args) {
     Utils.printMessage("Hello!");
     String message = Joiner.on(", ").join("hello", "world");
+    System.out.println(message);
   }
 }
