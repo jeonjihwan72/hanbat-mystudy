@@ -37,4 +37,20 @@ java.exe App
 - .gitignore 파일 생성하는 사이트
 > [gitignore.io](https://gitignore.io)
 
-- [java byte code 구성](https://medium.com/@davethomas_9528/writing-hello-world-in-java-byte-code-34f75428e0ad) 
+- [java byte code 구성](https://medium.com/@davethomas_9528/writing-hello-world-in-java-byte-code-34f75428e0ad)
+
+아래의 두 코드는 결과적으로 동일한 결과를 출력하지만
+```
+jar cfe app.jar App *.class
+```
+커맨드를 통해 사전에 jar 파일에 메인을 설정해야 한다
+
+1. jar 명령어 x
+```
+java -cp app.jar App
+```
+
+2. jar 명령어 o
+```
+java -jar app.jar
+```
