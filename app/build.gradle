@@ -29,3 +29,7 @@ jar {
 tasks.named('test') {
     useJUnitPlatform()  // test는 UnitPlatform을 사용한다.
 }
+
+tasks.named('run') {
+    standardInput = System.in // 표준 입력을 시스템 입력으로 설정
+}

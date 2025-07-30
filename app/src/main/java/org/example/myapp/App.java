@@ -11,10 +11,12 @@ public class App {
    * @param args 명령행 인수 배열 (이 프로그램에서는 사용되지 않음)
    */
   public static void main(String[] args) {
+    //    Scanner scanner = new Scanner(new FileInputStream("a.txt"));
+    //    Scanner scanner = new Scanner(new ByteArrayInputStream());
     Scanner scanner = new Scanner(System.in);
-    System.out.print("이름? ");
+    System.out.print("Name? ");
     String name = scanner.nextLine();
-    System.out.printf("안녕하세요 %s 님!\n", name);
+    System.out.printf("Hello %s sir!\n", name);
     scanner.close();
   }
 }
