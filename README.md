@@ -103,7 +103,7 @@ java -cp bin;lib/guava-33.4.8-jre.jar org.example.myapp.App
 
 - 실무에서는 gradle을 사용하고 팀 프로젝트에서 실행해볼 때에는 gradlew를 사용하여 실행함으로써 환경적 차이를 상쇄하여 확인할 수 있다.
 
-- gradle에서 어떠한 코드가 작동되었는지 확인하기 위해서는 --console=verbose를 추가한다.
+- gradle에서 어떠한 코드가 작동되었는지, 어떤 순서로 실행되었는지 확인하기 위해서는 --console=verbose를 추가한다.
 > ex.
 
 ```bash

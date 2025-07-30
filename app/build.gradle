@@ -1,8 +1,8 @@
 
 plugins {
-    // id 'application'
-    id 'java'
+    id 'application'    // application 플러그인은 java 플러그인이 내장되어있기 때문에 별도로 java 플러그인을 명시하지 않아도 된다.
 }
+
 repositories {
     mavenCentral()  // 의존 라이브러리를 갖고 있는 중앙 저장소 서버의 주소를 지정한다.
 }
