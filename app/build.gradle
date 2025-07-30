@@ -16,14 +16,15 @@ dependencies {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)    // 자바 버전 최대 21까지의 function만을 수용하겠다.
+                                                        // 만약 21버전보다 위의 버전이 반영된다면 에러를 반환한다.
     }
 }
 
-/*
 application {
     mainClass = 'org.example.myapp.App'
 }
 
+/*
 jar {
     archiveFileName = 'myapp.jar'
 }
