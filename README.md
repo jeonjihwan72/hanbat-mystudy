@@ -11,6 +11,11 @@ github commit with VS code test
 git config --global core.editor "code --wait"
 ```
 
+- 프로젝트 생성 시 직접 폴더를 생성하기보다는 아래의 코드와 같이 gradle을 사용하여 생성하는 것이 권장된다.
+
+```bash
+gradle init
+```
 
 - 현재 cmd가 가리키고 있는 위치를 확인하는 명령어 
 
