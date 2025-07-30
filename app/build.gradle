@@ -13,13 +13,13 @@ dependencies {
     implementation 'com.google.guava:guava:33.4.5-jre'
 }
 
-/*
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(21)    // 자바 버전 최대 21까지의 function만을 수용하겠다.
     }
 }
 
+/*
 application {
     mainClass = 'org.example.myapp.App'
 }

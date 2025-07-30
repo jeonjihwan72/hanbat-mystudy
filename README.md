@@ -111,3 +111,6 @@ gradle classes --console=verbose
 ```
 
 -  계층 관계는 공식 문서에서 확인할 수 있음. [gradle.org](https://docs.gradle.org/current/userguide/java_plugin.html)
+
+- 제품 개발 시 프로그래밍 언어의 버전은 고객·고객사의 사용 버전을 기준으로 설정
+> 버전 변경으로 인한 피해 발생시 피해보상 청구 소송에 걸릴 수 있음
