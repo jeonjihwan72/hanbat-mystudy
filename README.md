@@ -110,6 +110,13 @@ java -cp bin;lib/guava-33.4.8-jre.jar org.example.myapp.App
 gradle classes --console=verbose
 ```
 
+- gradle에서 출력내용만 확인하고 싶다면 --quiet 옵션을 사용한다.
+> ex.
+
+```bash
+gradle run --quiet
+```
+
 -  계층 관계는 공식 문서에서 확인할 수 있음. [gradle.org](https://docs.gradle.org/current/userguide/java_plugin.html)
 
 - 제품 개발 시 프로그래밍 언어의 버전은 고객·고객사의 사용 버전을 기준으로 설정
