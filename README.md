@@ -130,5 +130,5 @@ gradle run --quiet
 - build.gradle에서는 설정하는 것으로 보이지만 실질적으로는 method를 호출하는 형태이다.
 
 - static function vs non-static function
-> static : 파라미터 외의 외부 데이터가 필요하지 않음
-> non-static : 파라미터 외의 외부 데이터가 필요함
+> - static : 파라미터 외의 외부 데이터가 필요하지 않음
+> - non-static : 파라미터 외의 외부 데이터가 필요함
