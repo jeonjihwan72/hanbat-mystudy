@@ -115,7 +115,7 @@ java -cp bin;lib/guava-33.4.8-jre.jar org.example.myapp.App
 
 > ex.
 
-```bash
+```commandline
 gradle classes --console=verbose
 ```
 
@@ -123,7 +123,7 @@ gradle classes --console=verbose
 
 > ex.
 
-```bash
+```commandline
 gradle run --quiet
 ```
 
@@ -164,3 +164,54 @@ chcp 65001
 - 실무에서는 레퍼런스와 객체를 별도로 구분하지 않고 '객체'로 동일하게 칭함.
 
 - application 플러그인은 기본적으로 java 플러그인을 내장하고 있다.
+
+- 메인 클래스 설정
+
+```
+application {
+    mainClass = 'org.example.myapp.App'
+}
+```
+
+- Windows console에서 한글이 깨질 때
+
+```groovy
+tasks.withType(JavaExec) {
+    systemProperty 'sun.stdout.encoding', 'UTF-8'   // 한글이 깨지는 경우 사용(출력 인코딩 UTF-8로 설정)
+    systemProperty 'sun.stderr.encoding', 'UTF-8'   // 한글이 깨지는 경우 사용(에러 출력 인코딩 UTF-8로 설정)
+}
+```
+
+SpringBoot에서 main 메소드가 여러 개인 경우 아래와 같이 ```@SpringBootApplication``` 애노태이션(annotation)을 클래스 앞에 붙여주어 메인 클래스임을 명시한다.
+
+```java
+
+@SpringBootApplication
+public class App {
+    public static void main(String[] args) {
+        System.out.println("스프링부트 서버 시작!");
+    }
+}
+```
+
+- ```this.변수·메소드명```에서의 this는 해당되는 객체의 주소를 가지고 있는 변수이다.
+
+- SpringBoot 서버를 실행하는 클래스에 ```@EnableAutoConfiguration``` 어노테이션을 붙여줘야 한다.
+- ```@EnableAutoConfiguration```: 톰캣 서버 실행에 관련된 기초 설정을 자동으로 처리
+- 실무에서는 일반적으로 서버 시작 클래스와 실행 대상 클래스를 나누지 않는다.
+- ```@SpringBootApplication```이 적용되는 클래스와 ```@EnableAutoConfiguration```이 적용되는 클래스가 같은 경우,
+  ```@SpringBootApplication``` 어노테이션만 붙여주면 된다.
+
+> ex.
+
+```java
+
+@EnableAutoConfiguration
+public class AppConfig {
+
+}
+```
+
+- 전체 과정
+  > 1. gradle 설치 및 적용
+  > 2. springboot 라이브러리 build.gradle에 저장
