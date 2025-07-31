@@ -14,9 +14,9 @@ public class App {
     //    Scanner scanner = new Scanner(new FileInputStream("a.txt"));
     //    Scanner scanner = new Scanner(new ByteArrayInputStream());
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Name? ");
+    System.out.print("이름? ");
     String name = scanner.nextLine();
-    System.out.printf("Hello %s sir!\n", name);
+    System.out.printf("안녕하세요 %s 님!\n", name);
     scanner.close();
   }
 }
