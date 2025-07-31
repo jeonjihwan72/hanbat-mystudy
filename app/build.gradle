@@ -1,6 +1,11 @@
 plugins {
-    id 'application'    // application 플러그인은 java 플러그인이 내장되어있기 때문에 별도로 java 플러그인을 명시하지 않아도 된다.
+    id 'java'
+    id 'org.springframework.boot' version '3.5.4'
 }
+
+// SpringBoot의 version에 맞춰 의존 라이브러리 버전을 관리하는 플러그인
+// 플러그인 자체 버전을 명시하지 않으므로써 버전이 고정되지 않고 유동적으로 버전이 자동으로 최신 버전을 유지한다.
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
     mavenCentral()  // 의존 라이브러리를 갖고 있는 중앙 저장소 서버의 주소를 지정한다.
