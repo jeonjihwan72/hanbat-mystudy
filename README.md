@@ -215,3 +215,27 @@ public class AppConfig {
 - 전체 과정
   > 1. gradle 설치 및 적용
   > 2. springboot 라이브러리 build.gradle에 저장
+
+
+- ```@GetMapping(path = "/hello/hi")```: URL와 메소드를 연결해주는 어노테이션
+
+- ```@EnableAutoConfiguration``` 만 사용할 경우 생성자가 자동 호출되지 않는다.
+- 만약 ```@SpringBootApplication```을 사용하지 않고 ```@EnableAutoConfiguration```을 사용하는 경우 ```@ComponentScan```을 같이 써서
+  다른 클래스를
+  바라볼 수 있도록 해야 한다.
+- ```@ComponentScan```: 현재 클래스와 같은 패키지 및 최하위 패키지를 모두 뒤져 컴포넌트를 찾아 자동 생성하는 설정
+  > @Component, @RestController, @Controller, @Service, @Repository가 붙은 클래스에서만 찾는다.
+
+- ```@SpringBootApplication``` = ```@SpringBootConfiguration``` + ```@EnableAutoConfiguration``` + ```@ComponentScan```
+
+- 객체 = Bean(빈) = 인스턴스 = 컴포넌트
+  > 컴포넌트(Component) : 역할이 주어진 객체
+  > 사용자의 요청에 반응하는 컴포넌트 : 컨트롤러
+  > 사용자의 요청을 처리하는 컴포넌트 : 리포지토리
+  > 업무를 처리하는 컴포넌트 : 서비스
+
+- 아래의 코드는 기존의 컨트롤러의 변경사항을 자동으로 반영하도록하는 코드이다.
+
+```groovy
+developmentOnly 'org.springframework.boot:spring-boot-devtools'
+```
