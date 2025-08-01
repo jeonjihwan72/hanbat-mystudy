@@ -251,6 +251,8 @@ public class AppConfig {
 
 - Servlet의 규칙을 따라 만들 때와 Spring의 규칙을 따라 만들 때 코드의 절대적인 양이 차이가 있다. (Servlet LoC > Spring LoC)
 - SpringBoot = Tomcat Server + SpringFramework
+- DispatcherServlet은 사용자가 보낸 HTTP 요청 파라미터를 컨트롤러 메소드 인자로 변환하는 역할을 한다. 이 과정에서 문자열, 정수형, 실수형, 부울값 등으로 자동으로 변환된다.
+- 사용자는 HTTP 요청을 통해 문자열 형태로 데이터를 서버에 전송하며, 서버는 이를 적절한 데이터 타입으로 변환하여 처리한다.
 
 ## 용어
 
@@ -266,6 +268,11 @@ public class AppConfig {
 - Servlet : 서버의 기능 중 작은 기능을 담당하는 자바 클래스
   > = Server Application + let(작은 조각을 의미하는 접미사)
 - Container : Servlet 객체 생성·실행·소멸을 담당
+- REST API : HTTP Client에서 호출하는 메소드
+  > - REST API는 HTTP 프로토콜을 기반으로, ```GET```, ```POST```, ```PUT```, ```DELETE``` 같은 HTTP 메소드를 사용해 데이터를 주고받는다.
+  > - REST API는 언어에 구애받지 않으며, 서버와 클라이언트가 서로 다른 언어로 개발되더라도 HTTP 프로토콜을 통해 통신할 수 있다.
+  > - URL을 통해 리소스를 식별하고 요청을 보내며, 응답 데이터는 기본적으로 JSON 형식으로 주고받지만, 상황에 따라 다른 형식도 사용될 수 있다.
+- Context Path : 기본 경로 주소
 
 ## 실무
 
