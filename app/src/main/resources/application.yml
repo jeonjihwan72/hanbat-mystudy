@@ -1,7 +1,13 @@
 server:
   port: 9999 # 서버 포트 번호
   servlet:
-    context-path: /api
+    context-path: /
 spring:
   application:
     name: myapp # 애플리케이션 이름
+  web:
+    resources:
+      static-locations: file:src/main/resources/static/
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    suffix: .html
