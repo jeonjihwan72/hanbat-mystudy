@@ -255,6 +255,18 @@ public class AppConfig {
 - 사용자는 HTTP 요청을 통해 문자열 형태로 데이터를 서버에 전송하며, 서버는 이를 적절한 데이터 타입으로 변환하여 처리한다.
 - ```@RestController```는 클라이언트에 리턴값을 보내는 어노테이션이고 ```@Controller```는 그 외에 리턴값을 보내는 어노테이션이다.
 
+- \r : 캐리지 리턴(Carrage Return 삽입)
+
+## 프로토콜 명령어
+
+- GET : 리소스 요청
+- POST : 리소스 생성/전송
+- PUT : 리소스 전체 수정
+- PATCH : 리소스 일부 수정
+- DELETE : 리소스 삭제
+- HEAD : 헤더만 요청 (본문 제외)
+- OPTIONS : 지원하는 메서드 확인
+
 ## 용어
 
 ### 기초 용어 약자
@@ -263,6 +275,7 @@ public class AppConfig {
 - HTML : Hyper Text Mark Language
 - CSS : Cascading Style Sheets
 - Java EE : Java Enterprise Edition
+- MIME Type : Multi-purpose Internet Mail Extension Type
 
 ### 용어
 
@@ -281,6 +294,9 @@ public class AppConfig {
   > - ...
 
 ## 실무
+
+### 실무 차이점
+- 실무에서는 \r\n 을 사용하지 않고 \n을 단일로 사용한다.
 
 ### 실무 조언
 

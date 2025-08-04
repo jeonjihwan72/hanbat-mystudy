@@ -1,0 +1,2 @@
+GET /news/article.html?id=20240112090002 HTTP/1.1\r\n
+Host: www.rpm9.com\r\n
