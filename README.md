@@ -254,8 +254,8 @@ public class AppConfig {
 - DispatcherServlet은 사용자가 보낸 HTTP 요청 파라미터를 컨트롤러 메소드 인자로 변환하는 역할을 한다. 이 과정에서 문자열, 정수형, 실수형, 부울값 등으로 자동으로 변환된다.
 - 사용자는 HTTP 요청을 통해 문자열 형태로 데이터를 서버에 전송하며, 서버는 이를 적절한 데이터 타입으로 변환하여 처리한다.
 - ```@RestController```는 클라이언트에 리턴값을 보내는 어노테이션이고 ```@Controller```는 그 외에 리턴값을 보내는 어노테이션이다.
-
 - \r : 캐리지 리턴(Carrage Return 삽입)
+- HTTP 명세서에서 코드 작성 방법이 명시되어 있다.
 
 ## 프로토콜 명령어
 
@@ -276,13 +276,14 @@ public class AppConfig {
 - CSS : Cascading Style Sheets
 - Java EE : Java Enterprise Edition
 - MIME Type : Multi-purpose Internet Mail Extension Type
+- RFC : Request(Recommend) For Comment
 
 ### 용어
 
 - Servlet : 서버의 기능 중 작은 기능을 담당하는 자바 클래스
   > = Server Application + let(작은 조각을 의미하는 접미사)
 - Container : Servlet 객체 생성·실행·소멸을 담당
-- REST API : HTTP Client에서 호출하는 메소드
+- REST API : HTTP Client에서 호출하는 메소드, 웹 서버에서 제공하는 메소드
   > - REST API는 HTTP 프로토콜을 기반으로, ```GET```, ```POST```, ```PUT```, ```DELETE``` 같은 HTTP 메소드를 사용해 데이터를 주고받는다.
   > - REST API는 언어에 구애받지 않으며, 서버와 클라이언트가 서로 다른 언어로 개발되더라도 HTTP 프로토콜을 통해 통신할 수 있다.
   > - URL을 통해 리소스를 식별하고 요청을 보내며, 응답 데이터는 기본적으로 JSON 형식으로 주고받지만, 상황에 따라 다른 형식도 사용될 수 있다.
