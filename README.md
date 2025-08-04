@@ -256,6 +256,7 @@ public class AppConfig {
 - ```@RestController```는 클라이언트에 리턴값을 보내는 어노테이션이고 ```@Controller```는 그 외에 리턴값을 보내는 어노테이션이다.
 - \r : 캐리지 리턴(Carrage Return 삽입)
 - HTTP 명세서에서 코드 작성 방법이 명시되어 있다.
+- Docker Container는 현재 Linux OS만 지원하기 때문에 가상 환경의 OS를 Linux로 설정해야 한다.
 
 ## 프로토콜 명령어
 
