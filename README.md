@@ -268,6 +268,23 @@ public class AppConfig {
 - HEAD : 헤더만 요청 (본문 제외)
 - OPTIONS : 지원하는 메서드 확인
 
+## Docker File
+
+```docker
+FROM ubuntu:14.04
+
+RUN apt-get update
+
+RUN apt-get install apache2 -y
+
+RUN echo '<!DOCTYPE html><html><body><h1>Hello, Hanbat Study</h1></body></html>' > /var/www/html/hello.html
+
+EXPOSE 80
+
+# 컨테이너 시작시 apache2를 백그라운드에서 실행되게 한다.
+CMD service apache2 start && tail -f /var/log/apache2/access.log
+```
+
 ## 용어
 
 ### 기초 용어 약자
