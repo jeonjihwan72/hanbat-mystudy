@@ -259,6 +259,12 @@ public class AppConfig {
 - Docker Container는 현재 Linux OS만 지원하기 때문에 가상 환경의 OS를 Linux로 설정해야 한다.
 - volume 설정: 컨테이너의 폴더를 외부의 폴더와 연결시키므로써 기존 컨테이너 데이터의 보존을 보장받을 수 있다.
 - GitLAB: Docker에 설치할 수 있는 서버
+- HTML4 vs HTML5
+  > 1. HTML4
+  > - ```<tr th:each="prod: ${allProducts}">```
+  > 2. HTML5
+  > - ```<tr data-th-if="${#lists.isEmpty(boards)}">```
+  > - HTML4문법을 HTML5에 적용하면 에러발생
 
 ## Auto-Boxing vs Auto-Unboxing
 ```java
@@ -278,7 +284,7 @@ public class AppConfig {
 
 ## Docker File
 
-```docker
+```dockerfile
 FROM ubuntu:14.04
 
 RUN apt-get update
@@ -303,6 +309,10 @@ CMD service apache2 start && tail -f /var/log/apache2/access.log
 - Java EE : Java Enterprise Edition
 - MIME Type : Multi-purpose Internet Mail Extension Type
 - RFC : Request(Recommend) For Comment
+- JSON : Java Script Object Notice
+- URI : Uniform Resource Identifier
+- URL : Uniform Resource Locator
+- URN : Uniform Resource Name
 
 ### 용어
 
@@ -319,12 +329,18 @@ CMD service apache2 start && tail -f /var/log/apache2/access.log
   > - 반복문이 있으면 태그를 반복 생성한다.
   > - 조건문이 있으면 조건에 따라 태그를 추가·삭제한다.
   > - ...
+- Schema : 구조라는 뜻도 있지만 프로토콜의 의미도 가지고 있음.
+- Payload : 보내고자 하는 실질적인 데이터(부가적인 정보들은 담고있지 않음)
 
 ## 실무
 
 ### 실무 차이점
 - 실무에서는 \r\n 을 사용하지 않고 \n을 단일로 사용한다.
+- 현재 렌더링 방식은 대부분 thymeleaf 엔진을 사용한다.
+- 다양한 장치에서 모두 구현할 수 있도록 Frontend와 Backend를 구분하고 Frontend에서 웹페이지·앱의 디자인을 나타내고 그 다음 Backend에서 데이터를 끌어오는 방식으로 호환성을 확보한다.
 
 ### 실무 조언
 
 - 실제 인재 수용력과 연봉 증가 추세가 웹 개발쪽이 우세한 경향이 강하게 보이기에 ```웹 개발 기술 + α``` 형태로 기술을 익기는 것을 권장한다.
+- 관공서는 일반적으로 풀스택 개발자를 지향
+- 네카라쿠배와 같은 유니콘 기업은 프론트엔드, 백엔드 분리하는 것을 지향
