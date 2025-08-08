@@ -313,6 +313,7 @@ CMD service apache2 start && tail -f /var/log/apache2/access.log
 - URI : Uniform Resource Identifier
 - URL : Uniform Resource Locator
 - URN : Uniform Resource Name
+- JDBC API : Java DataBase Connection API
 
 ### 용어
 
