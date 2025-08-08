@@ -258,6 +258,7 @@ public class AppConfig {
 - HTTP 명세서에서 코드 작성 방법이 명시되어 있다.
 - Docker Container는 현재 Linux OS만 지원하기 때문에 가상 환경의 OS를 Linux로 설정해야 한다.
 - volume 설정: 컨테이너의 폴더를 외부의 폴더와 연결시키므로써 기존 컨테이너 데이터의 보존을 보장받을 수 있다.
+- GitLAB: Docker에 설치할 수 있는 서버
 
 ## Auto-Boxing vs Auto-Unboxing
 ```java
