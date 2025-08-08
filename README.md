@@ -265,6 +265,7 @@ public class AppConfig {
   > 2. HTML5
   > - ```<tr data-th-if="${#lists.isEmpty(boards)}">```
   > - HTML4문법을 HTML5에 적용하면 에러발생
+- JDBC Driver: 데이터베이스와 연결하는 라이브러리
 
 ## Auto-Boxing vs Auto-Unboxing
 ```java
